@@ -1,6 +1,8 @@
 
 <%@tag description="Game List" pageEncoding="UTF-8"%>
 <%@tag import="java.util.ArrayList" %>
+<%@taglib tagdir="/WEB-INF/tags" prefix="my" %>
+
 
 <%-- The list of normal or fragment attributes can be specified here: --%>
 <%@attribute name="color"%>
@@ -19,7 +21,7 @@
             request.setAttribute("game", gameList.getGame(i)); // i is the slot number of the game 
             // Use the game.tag to display this game 
  %>
- <li><span>${game.winner}<span/> vs ${game.loser} (${game.score_winner} - ${game.score_loser})</li>
+    <li><my:game color="green"></my:game></li>
 <%
         }
         %>

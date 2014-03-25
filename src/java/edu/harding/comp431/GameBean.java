@@ -14,8 +14,8 @@ public class GameBean implements java.io.Serializable{
 
     private String winner;
     private String loser;
-    private int score_winner;
-    private int score_loser;
+    private int winnerScore;
+    private int loserScore;
     
     
     public String getWinner() {
@@ -34,20 +34,20 @@ public class GameBean implements java.io.Serializable{
         this.loser = loser;
     }
 
-    public int getScore_winner() {
-        return score_winner;
+    public int getWinnerScore() {
+        return winnerScore;
     }
 
-    public void setScore_winner(int score_winner) {
-        this.score_winner = score_winner;
+    public void setWinnerScore(int winnerScore) {
+        this.winnerScore = winnerScore;
     }
 
-    public int getScore_loser() {
-        return score_loser;
+    public int getLoserScore() {
+        return loserScore;
     }
 
-    public void setScore_loser(int score_loser) {
-        this.score_loser = score_loser;
+    public void setLoserScore(int loserScore) {
+        this.loserScore = loserScore;
     }
     
 
