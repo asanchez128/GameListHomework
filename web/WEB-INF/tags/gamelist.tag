@@ -1,13 +1,10 @@
-<%-- 
-    Document   : gamelist
-    Created on : Mar 25, 2014, 11:09:02 AM
-    Author     : asanchez
---%>
 
-<%@tag description="put the tag description here" pageEncoding="UTF-8"%>
+<%@tag description="Game List" pageEncoding="UTF-8"%>
+<%@tag import="java.util.ArrayList" %>
 
 <%-- The list of normal or fragment attributes can be specified here: --%>
-<%@attribute name="message"%>
+<%@attribute name="color"%>
 
 <%-- any content can be specified here e.g.: --%>
-<h2>${message}</h2>
+<jsp:useBean id="game" class="edu.harding.comp431.GameBean" scope="request" />
+ 
